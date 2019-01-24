@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    background-image: url("../images/lightpaperfibers.png");
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.li-nav {
+    display: inline;
+    line-height: 80px;
+    padding-left: 20px;
+}
+
+.li-title {
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+}
+
+.li-btn {
+    background: #1955a5;
+    border: 1px solid #3d73d5;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.a-title {
+    color: #000000;
+}
+
+.a-title:hover {
+    color: #6f6f6f;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    width: 40%;
+    height: 200px;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    padding: 10px;
+}
+
+#modal-text {
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    height: 50px;
+    margin-top: 50px;
+    width: 400px;
+    margin-left: 40px;
+    padding-left: 5px;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 50px;
+    background-image: url("../images/clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+    color: #ffffff;
+    padding-top: 100px;
+    font-family: "Merriweather", serif;
+}
+
+.unsaved, .saved {
+    list-style-type: none;
+}
+
+.article {
+    box-shadow: 0px 3px 8px #1b1717;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-title {
+    font-size: 30px;
+    font-family: "Merriweather", serif;
+}
+
+.save-article, .add-note, .delete-note, .edit-note, .delete-article, .add-note-btn, .edit-note-btn {
+    background: #1955a5;
+    border: 1px solid #3d73d5;
+    padding: 10px;
+    margin-left: 60px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ffffff;    
+}
+
+.delete-note, .edit-note, .delete-article, .add-note {
+    width: 120px;
+    margin-left: 60px;
+}
+
+.delete-note, .edit-note, .add-note {
+    margin-bottom: 5px;
+}
+
+.add-note-btn, .edit-note-btn {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+
+.a-content {
+    width: 80%;
+}

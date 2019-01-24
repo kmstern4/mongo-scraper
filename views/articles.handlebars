@@ -1,0 +1,34 @@
+<ul class="navbar">
+    <li class="li-title li-nav">Mongo Scraper</li>
+    <li class="li-nav"><a href="/">Home</a></li>
+    <li class="li-nav"><a href="/saved">Saved Articles</a></li>
+    <li class="li-btn scrape-btn li-nav">Scrape New Articles!</li>
+    <li class="li-btn clear-btn li-nav">Clear Articles!</li>
+</ul>
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span onclick="location.href='/'" class="close">&times;</span>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<h1 class="h1">Washington Post<br>Travel</h1>
+<ul class="unsaved">
+    {{#if articles}}
+        {{#each articles}}
+            <li class="article" data-article-id={{_id}}>
+                <div class="a-content">
+                    <div class="a-title"><a class="a-title" target="_blank" href={{link}}>{{title}}</a></div>
+                    <hr>
+                    <div class="a-summary">{{summary}}</div>
+                </div>
+                <button class="save-article">Save Article</button>
+            </li>
+        {{/each}}
+    {{/if}}
+    {{#unless articles}}
+        <li class="article">
+            Click "Scrape New Articles" above to see the latest articles!
+        </li>
+    {{/unless}}
+</ul>
